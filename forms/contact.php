@@ -5,11 +5,10 @@
 		$subject=$_POST['subject'];
                 $message=$_POST['message'];
                 $message=$name.", ".$message;
-		$recipientEmail = "jobhunt.suraj@gmail.com";
+		$recipientEmail = "developer.ramesh1@gmail.com";
 		$to = $recipientEmail;
 		if(mail($to,$subject,$message,$from)){
                         echo "alert('Thank you for reaching out to me.')";
-			header('Location: http://surajshrestha.info');
 		} 
 		else {
 			echo 'E-mail delivery failure!';
