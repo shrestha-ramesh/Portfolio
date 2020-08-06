@@ -9,6 +9,7 @@
 		$to = $recipientEmail;
 		if(mail($to,$subject,$message,$from)){
                         echo "alert('Thank you for reaching out to me.')";
+			header('Location: https://portfolio-b074f.firebaseapp.com/');
 		} 
 		else {
 			echo 'E-mail delivery failure!';
